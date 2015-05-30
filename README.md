@@ -1,6 +1,6 @@
 fjats
 ===
-日本のトップアクセスランクが高いサイトを取得するスクリプト
+日本のアクセスランキングが高いサイトを取得するスクリプト
 
 ## About
 This script fetch the top 525 sites in Japan from alexa.com.
