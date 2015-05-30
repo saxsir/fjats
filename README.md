@@ -13,6 +13,10 @@ This script fetch the top 525 sites in Japan from alexa.com.
 - pip
   - PyQuery
 
+If you are installed pip already, you can install it easily.
+
+    $ pip install pyquery
+
 ## Run
 
     $ make run
