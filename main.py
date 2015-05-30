@@ -7,6 +7,8 @@ Note: The top sites lists are ordered by their 1 month alexa traffic.
 import csv
 from pyquery import PyQuery as pq
 from datetime import datetime as dt
+from time import sleep
+from random import randint
 
 ranks = []
 for i in range(21):
@@ -16,6 +18,7 @@ for i in range(21):
   ul = [doc(li) for li in doc('.site-listing')]
   ranks += [(li('.count').text(), li('.desc-paragraph')('a').text()) for li in ul]
   print('Fetch %s' % url)    # Check script is running
+  sleep(randint(1,3))
 
 with open('topsites-jp_%s.csv' % dt.now().strftime('%y-%m-%d-%H-%M'), 'w') as f:
   writer = csv.writer(f, lineterminator='\n')
